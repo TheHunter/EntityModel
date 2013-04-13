@@ -1,7 +1,6 @@
 <h2 id="welcometopersistentlayer">Welcome to PersistentLayer</h2>
 
-<p>PersistentLayer is a layered architecture which contains a set of components (classes and interfaces) responsable
-for persisting application data to and retrieving it from one or many data stores.</p>
+<p>EntityModel is a easy project which defines a set of basic classes for persistent entities.</p>
 
 
 <h2 id="licenses">Licenses</h2>
