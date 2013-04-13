@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModel", "EntityModel\EntityModel.csproj", "{D0994A0C-1E83-41DB-8516-FE8AD19A22D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityModel_v4.0", "EntityModel_v4.0\EntityModel_v4.0.csproj", "{A673074B-2655-40CE-A0D8-239117B35B16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0994A0C-1E83-41DB-8516-FE8AD19A22D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0994A0C-1E83-41DB-8516-FE8AD19A22D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0994A0C-1E83-41DB-8516-FE8AD19A22D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0994A0C-1E83-41DB-8516-FE8AD19A22D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A673074B-2655-40CE-A0D8-239117B35B16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A673074B-2655-40CE-A0D8-239117B35B16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A673074B-2655-40CE-A0D8-239117B35B16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A673074B-2655-40CE-A0D8-239117B35B16}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
