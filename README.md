@@ -1,4 +1,4 @@
-<h2 id="welcometopersistentlayer">Welcome to PersistentLayer</h2>
+<h2 id="welcometoentitymodel">Welcome to EntityModel</h2>
 
 <p>EntityModel is a easy project which defines a set of basic classes for persistent entities.</p>
 
@@ -10,9 +10,9 @@
 
 https://raw.github.com/nhibernate/nhibernate-core/3.3.x/lgpl.txt
 
-https://raw.github.com/TheHunter/PersistentLayer/blob/prod/lgpl.txt
+https://raw.github.com/TheHunter/EntityModel/blob/prod/lgpl.txt
 
-https://raw.github.com/TheHunter/PersistentLayer/prod/lgpl.txt
+https://raw.github.com/TheHunter/EntityModel/prod/lgpl.txt
 
 
 
