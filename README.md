@@ -10,7 +10,3 @@
 
 https://raw.github.com/TheHunter/EntityModel/prod/lgpl.txt
 
-
-
-git remote add origin https://github.com/TheHunter/EntityModel.git
-git push -u origin master
