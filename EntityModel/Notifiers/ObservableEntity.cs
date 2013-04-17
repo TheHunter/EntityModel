@@ -14,9 +14,9 @@ namespace EntityModel.Notifiers
         : BaseEntity<TKey>, IObservable
     {
         /// <summary>
-        /// 
+        /// Rapresents the method invoked for managing the event generated when properties values are changed.
         /// </summary>
-        public virtual event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         /// <summary>
         /// Notifies properties changes to listeners.
