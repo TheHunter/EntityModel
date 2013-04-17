@@ -16,6 +16,7 @@ namespace EntityModel
         /// 
         /// </summary>
         private TKey id;
+        private bool assignedId = false;
 
         /// <summary>
         /// Gets and sets the identifier of the calling entity.
@@ -23,7 +24,11 @@ namespace EntityModel
         public virtual TKey ID
         {
             get { return this.id; }
-            protected set { this.id = value; }
+            protected set
+            {
+                this.id = value;
+                this.assignedId = true;
+            }
         }
 
         /// <summary>
@@ -56,7 +61,7 @@ namespace EntityModel
         /// <returns></returns>
         public override string ToString()
         {
-            return string.Format("Entity Name: {0}, ID: {1}", typeof(BaseEntity<TKey>).Name, (default(TKey).Equals(ID) ? "[no set]" : ID.ToString()));
+            return string.Format("Entity Name: {0}, ID: {1}", this.GetType().Name, this.assignedId ? this.ID.ToString() : "[no set]");
         }
     }
 }
