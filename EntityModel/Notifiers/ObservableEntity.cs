@@ -16,7 +16,7 @@ namespace EntityModel.Notifiers
         /// <summary>
         /// Rapresents the method invoked for managing the event generated when properties values are changed.
         /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
+        public virtual event PropertyChangedEventHandler PropertyChanged;
 
         /// <summary>
         /// Notifies properties changes to listeners.
@@ -25,7 +25,8 @@ namespace EntityModel.Notifiers
         protected virtual void OnPropertyChanged(string propertyName)
         {
             if (PropertyChanged != null)
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
+
         }
 
     }
