@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseEntity.cs" />
+    <Compile Include="IEntity.cs" />
     <Compile Include="IObservable.cs" />
     <Compile Include="Notifiers\ObservableEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

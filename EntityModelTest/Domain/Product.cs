@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EntityModel.Notifiers;
+﻿using EntityModel.Notifiers;
 
-namespace EntityModelTest.Domain
+namespace EntityModel.Test.Domain
 {
     public class Product
         : ObservableEntity<int?>

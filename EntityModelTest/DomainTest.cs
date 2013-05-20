@@ -1,16 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using EntityModelTest.Domain;
+using EntityModel.Test.Domain;
 using NUnit.Framework;
 
-namespace EntityModelTest
+namespace EntityModel.Test
 {
     [TestFixture]
     public class DomainTest
     {
-        private int code = 0;
+        private int code;
 
         [Test]
         public void PersonTest()
@@ -31,7 +28,7 @@ namespace EntityModelTest
         [Test]
         public void ProductTest()
         {
-            var prod = new Product(){Category = "Travel", Owner = "Pippo"};
+            var prod = new Product {Category = "Travel", Owner = "Pippo"};
             prod.PropertyChanged += PropertyProductHandel;
 
             prod.Owner = "Pippo2";
@@ -43,7 +40,7 @@ namespace EntityModelTest
         [Test]
         public void ProductTest2()
         {
-            var prod = new Product() { Category = "Travel", Owner = "Pippo" };
+            var prod = new Product { Category = "Travel", Owner = "Pippo" };
             prod.PropertyChanged += PropertyProductHandel;
             prod.Owner = "Pippo";
 
@@ -54,7 +51,7 @@ namespace EntityModelTest
         [Test]
         public void ProductTest3()
         {
-            var prod = new Product() {Category = "Travel"};
+            var prod = new Product {Category = "Travel"};
             prod.PropertyChanged += PropertyProductHandel;
 
             prod.Owner = "Pippo";
@@ -65,7 +62,7 @@ namespace EntityModelTest
         [Test]
         public void ProductTest4()
         {
-            var prod = new Product() { Category = "Travel" };
+            var prod = new Product { Category = "Travel" };
             prod.PropertyChanged += PropertyProductHandel;
 
             prod.Owner = null;

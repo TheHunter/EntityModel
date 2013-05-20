@@ -15,7 +15,7 @@ namespace EntityModel
         /// <summary>
         /// The cuurent version for this object.
         /// </summary>
-        private int version = 0;
+        private int version;
 
         /// <summary>
         /// The current version for the calling object.

@@ -11,6 +11,7 @@ namespace EntityModel
     /// <typeparam name="TKey">Type of identifier for this entity.</typeparam>
     [Serializable]
     public abstract class BaseEntity<TKey>
+        : IEntity<TKey>
     {
         /// <summary>
         /// 

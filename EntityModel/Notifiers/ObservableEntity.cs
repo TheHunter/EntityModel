@@ -11,7 +11,7 @@ namespace EntityModel.Notifiers
     /// </summary>
     /// <typeparam name="TKey">Indicates the type of identity.</typeparam>
     public abstract class ObservableEntity<TKey>
-        : BaseEntity<TKey>, IObservable
+        : BaseEntity<TKey>, IObservable<TKey>
     {
         /// <summary>
         /// Rapresents the method invoked for managing the event generated when properties values are changed.

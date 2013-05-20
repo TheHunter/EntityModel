@@ -45,6 +45,9 @@
     <Compile Include="..\EntityModel\BaseEntity.cs">
       <Link>BaseEntity.cs</Link>
     </Compile>
+    <Compile Include="..\EntityModel\IEntity.cs">
+      <Link>IEntity.cs</Link>
+    </Compile>
     <Compile Include="..\EntityModel\IObservable.cs">
       <Link>IObservable.cs</Link>
     </Compile>
