@@ -51,6 +51,9 @@
     <Compile Include="..\EntityModel\IObservable.cs">
       <Link>IObservable.cs</Link>
     </Compile>
+    <Compile Include="..\EntityModel\IVersioned.cs">
+      <Link>IVersioned.cs</Link>
+    </Compile>
     <Compile Include="..\EntityModel\Notifiers\ObservableEntity.cs">
       <Link>Notifiers\ObservableEntity.cs</Link>
     </Compile>

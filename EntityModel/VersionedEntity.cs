@@ -10,7 +10,7 @@ namespace EntityModel
     /// </summary>
     /// <typeparam name="TKey">The type of key for this class.</typeparam>
     public abstract class VersionedEntity<TKey>
-        : BaseEntity<TKey>
+        : BaseEntity<TKey>, IVersioned<TKey>
     {
         /// <summary>
         /// The cuurent version for this object.

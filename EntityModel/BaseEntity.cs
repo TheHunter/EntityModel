@@ -40,9 +40,8 @@ namespace EntityModel
         public override bool Equals(object obj)
         {
             if (obj != null && obj is BaseEntity<TKey>)
-            {
                 return this.GetHashCode() == obj.GetHashCode();
-            }
+
             return false;
         }
 
