@@ -13,11 +13,15 @@ namespace EntityModel
     public abstract class BaseEntity<TKey>
         : IEntity<TKey>
     {
-        /// <summary>
-        /// 
-        /// </summary>
         private TKey id;
-        private bool assignedId = false;
+        private bool assignedId;
+        private readonly Type idType;
+
+        protected BaseEntity()
+        {
+            assignedId = false;
+            idType = typeof (TKey);
+        }
 
         /// <summary>
         /// Gets and sets the identifier of the calling entity.
@@ -51,8 +55,10 @@ namespace EntityModel
         /// <returns></returns>
         public override int GetHashCode()
         {
-            TKey key = default(TKey);
-            return 7 * (key.Equals(ID) ? key.GetHashCode() : this.ID.GetHashCode());
+            if (idType.IsClass || idType.Name.Equals("Nullable`1"))
+                return ID == null ? 0 : ( 7 * this.ID.GetHashCode() );
+
+            return 7 * this.ID.GetHashCode();
         }
 
         /// <summary>
