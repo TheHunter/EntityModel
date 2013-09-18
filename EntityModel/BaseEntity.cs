@@ -9,7 +9,6 @@ namespace EntityModel
     /// A base class for persistent entities.
     /// </summary>
     /// <typeparam name="TKey">Type of identifier for this entity.</typeparam>
-    [Serializable]
     public abstract class BaseEntity<TKey>
         : IEntity<TKey>
     {
