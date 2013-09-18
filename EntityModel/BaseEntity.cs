@@ -14,13 +14,10 @@ namespace EntityModel
         : IEntity<TKey>
     {
         private TKey id;
-        private bool assignedId;
-        private readonly Type idType;
 
         protected BaseEntity()
         {
-            assignedId = false;
-            idType = typeof (TKey);
+            //assignedId = false;
         }
 
         /// <summary>
@@ -32,7 +29,6 @@ namespace EntityModel
             protected set
             {
                 this.id = value;
-                this.assignedId = true;
             }
         }
 
@@ -43,7 +39,10 @@ namespace EntityModel
         /// <returns></returns>
         public override bool Equals(object obj)
         {
-            if (obj != null && obj is BaseEntity<TKey>)
+            if (obj == null)
+                return false;
+
+            if (obj is BaseEntity<TKey>)
                 return this.GetHashCode() == obj.GetHashCode();
 
             return false;
@@ -55,10 +54,7 @@ namespace EntityModel
         /// <returns></returns>
         public override int GetHashCode()
         {
-            if (idType.IsClass || idType.Name.Equals("Nullable`1"))
-                return ID == null ? 0 : ( 7 * this.ID.GetHashCode() );
-
-            return 7 * this.ID.GetHashCode();
+            return Equals(ID, default(TKey)) ? 0 : (7 * this.ID.GetHashCode());
         }
 
         /// <summary>
@@ -67,7 +63,9 @@ namespace EntityModel
         /// <returns></returns>
         public override string ToString()
         {
-            return string.Format("Entity Name: {0}, ID: {1}", this.GetType().Name, this.assignedId ? this.ID.ToString() : "[no set]");
+            string nameType = this.GetType().Name;
+            int index = nameType.IndexOf("`", StringComparison.Ordinal);
+            return string.Format("Entity Name: {0}<{1}>, ID: {2}", nameType.Substring(0, index), typeof (TKey).Name, this.ID);
         }
     }
 }
