@@ -9,13 +9,9 @@
         public Person(){}
 
         public Person(int key)
+            :base(key)
         {
-            this.OnInit(key);
-        }
-
-        private void OnInit(int key)
-        {
-            this.ID = key;
+            
         }
 
         /// <summary>

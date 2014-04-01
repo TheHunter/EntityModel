@@ -14,9 +14,21 @@ namespace EntityModel
     {
         private TKey id;
 
+        /// <summary>
+        /// 
+        /// </summary>
         protected BaseEntity()
         {
-            //assignedId = false;
+            
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        protected BaseEntity(TKey id)
+        {
+            this.id = id;
         }
 
         /// <summary>

@@ -18,6 +18,35 @@ namespace EntityModel
         private int version;
 
         /// <summary>
+        /// 
+        /// </summary>
+        protected VersionedEntity()
+        {
+            
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        protected VersionedEntity(TKey id)
+            :base(id)
+        {
+            
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="version"></param>
+        protected VersionedEntity(TKey id, int version)
+            :base(id)
+        {
+            this.version = version;
+        }
+
+        /// <summary>
         /// The current version for the calling object.
         /// </summary>
         public virtual int Version

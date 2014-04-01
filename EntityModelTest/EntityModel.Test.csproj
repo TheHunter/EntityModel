@@ -48,6 +48,7 @@
     <Compile Include="DomainTest.cs" />
     <Compile Include="Domain\GenericEntity.cs" />
     <Compile Include="Domain\Person.cs" />
+    <Compile Include="Domain\PersonVersioned.cs" />
     <Compile Include="Domain\Product.cs" />
     <Compile Include="IndetifierTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,45 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="EntityModel.BaseEntity&lt;TKey&gt;" Collapsed="true">
+  <Class Name="EntityModel.BaseEntity&lt;TKey&gt;">
     <Position X="1.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAEgAAAAAAAAAAAAIAAAAAAAAAAIgA=</HashCode>
+      <HashCode>AAAAAAAAAAAAgAAEgAAAAAAAAAAAAIAAAAAAAAAAAgA=</HashCode>
       <FileName>BaseEntity.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="EntityModel.VersionedEntity&lt;TKey&gt;" Collapsed="true">
-    <Position X="0.5" Y="2" Width="1.5" />
+  <Class Name="EntityModel.VersionedEntity&lt;TKey&gt;">
+    <Position X="0.5" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="EntityModel.BaseEntity&lt;TKey&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="2.5" Y="3.084" />
+        <Point X="2.5" Y="3.792" />
+        <Point X="1.25" Y="3.792" />
+        <Point X="1.25" Y="4.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>IAAAACAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>VersionedEntity.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="EntityModel.Notifiers.ObservableEntity&lt;TKey&gt;" Collapsed="true">
-    <Position X="2.75" Y="2" Width="1.5" />
+  <Class Name="EntityModel.Notifiers.ObservableEntity&lt;TKey&gt;">
+    <Position X="3" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="EntityModel.BaseEntity&lt;TKey&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="2.5" Y="3.084" />
+        <Point X="2.5" Y="3.792" />
+        <Point X="3.75" Y="3.792" />
+        <Point X="3.75" Y="4.25" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Notifiers\ObservableEntity.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="EntityModel.IEntity&lt;TKey&gt;" Collapsed="true">
-    <Position X="6" Y="0.5" Width="1.5" />
+  <Interface Name="EntityModel.IEntity&lt;TKey&gt;">
+    <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IEntity.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="EntityModel.IObservable&lt;TKey&gt;" Collapsed="true">
-    <Position X="7.25" Y="2" Width="1.5" />
+  <Interface Name="EntityModel.IObservable&lt;TKey&gt;">
+    <Position X="7.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IObservable.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="EntityModel.IVersioned&lt;TKey&gt;" Collapsed="true">
-    <Position X="5" Y="2" Width="1.5" />
+  <Interface Name="EntityModel.IVersioned&lt;TKey&gt;">
+    <Position X="5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>IVersioned.cs</FileName>
