@@ -9,11 +9,23 @@ namespace EntityModel
     /// 
     /// </summary>
     /// <typeparam name="TKey"></typeparam>
-    public interface IEntity<TKey>
+    public interface IEntity<out TKey>
+        : IEntity
     {
         /// <summary>
         /// 
         /// </summary>
         TKey ID { get; }
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public interface IEntity
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        object Key { get; }
     }
 }

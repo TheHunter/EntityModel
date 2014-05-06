@@ -32,6 +32,14 @@ namespace EntityModel
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        object IEntity.Key
+        {
+            get { return id; }
+        }
+
+        /// <summary>
         /// Gets and sets the identifier of the calling entity.
         /// </summary>
         public virtual TKey ID
