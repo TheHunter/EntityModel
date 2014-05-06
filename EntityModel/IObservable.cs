@@ -9,7 +9,7 @@ namespace EntityModel
     /// <summary>
     /// Observes the properties changes and notifies all observers that registering this notifications.
     /// </summary>
-    public interface IObservable<TKey>
+    public interface IObservable<out TKey>
         : INotifyPropertyChanged, IEntity<TKey>
     {
 
