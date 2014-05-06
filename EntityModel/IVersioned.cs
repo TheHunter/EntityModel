@@ -9,7 +9,7 @@ namespace EntityModel
     /// 
     /// </summary>
     /// <typeparam name="TKey"></typeparam>
-    interface IVersioned<TKey>
+    interface IVersioned<out TKey>
         : IEntity<TKey>
     {
         /// <summary>
